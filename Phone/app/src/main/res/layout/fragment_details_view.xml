@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:id="@+id/detailsWebsite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="@string/website"
+        android:layout_margin="1dp"/>
+
+    <TextView
+        android:id="@+id/detailsWebsiteEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/detailsWebsite"
+        android:layout_toEndOf="@id/detailsWebsite"
+        android:layout_alignTop="@id/detailsWebsite"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"/>
+
+    <TextView
+        android:id="@+id/detailsUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailsWebsite"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="@string/username"
+        android:layout_margin="1dp" />
+
+    <TextView
+        android:id="@+id/detailsUsernameEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailsUsername"
+        android:layout_toRightOf="@id/detailsUsername"
+        android:layout_toEndOf="@id/detailsUsername"
+        android:layout_alignTop="@id/detailsUsername"
+        android:layout_alignLeft="@id/detailsWebsiteEntry"
+        android:layout_alignStart="@id/detailsWebsiteEntry"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"/>
+
+    <TextView
+        android:id="@+id/detailsDate"
+        android:text="@string/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailsUsername"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/detailsDateEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_toRightOf="@id/detailsDate"
+        android:layout_toEndOf="@id/detailsDate"
+        android:layout_alignTop="@id/detailsDate"
+        android:layout_alignLeft="@id/detailsWebsiteEntry"
+        android:layout_alignStart="@id/detailsWebsiteEntry"/>
+
+    <TextView
+        android:id="@+id/detailsExpire"
+        android:text="@string/expired"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailsDate"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/detailsExpireEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_toRightOf="@id/detailsExpire"
+        android:layout_toEndOf="@id/detailsExpire"
+        android:layout_alignTop="@id/detailsExpire"
+        android:layout_alignLeft="@id/detailsWebsiteEntry"
+        android:layout_alignStart="@id/detailsWebsiteEntry" />
+
+    <TextView
+        android:id="@+id/detailsDateUsed"
+        android:text="@string/lastUsed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailsExpire"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/detailsDateUsedEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_toRightOf="@id/detailsDateUsed"
+        android:layout_toEndOf="@id/detailsDateUsed"
+        android:layout_alignTop="@id/detailsDateUsed"
+        android:layout_alignLeft="@id/detailsWebsiteEntry"
+        android:layout_alignStart="@id/detailsWebsiteEntry"/>
+
+    <TextView
+        android:id="@+id/detailsNumberUsed"
+        android:text="@string/numberOfUsed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailsDateUsed"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/detailsNumberUsedEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/detailsNumberUsed"
+        android:layout_toEndOf="@id/detailsNumberUsed"
+        android:layout_alignTop="@id/detailsNumberUsed"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_alignLeft="@id/detailsWebsiteEntry"
+        android:layout_alignStart="@id/detailsWebsiteEntry" />
+
+    <TextView
+        android:id="@+id/detailsDuplicated"
+        android:text="@string/duplicated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailsNumberUsed"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/detailsDuplicatedEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/detailsDuplicated"
+        android:layout_toEndOf="@id/detailsDuplicated"
+        android:layout_alignTop="@id/detailsDuplicated"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_alignLeft="@id/detailsWebsiteEntry"
+        android:layout_alignStart="@id/detailsWebsiteEntry" />
+
+</RelativeLayout>

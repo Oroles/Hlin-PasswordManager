@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/detailsTitleNoteLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="@string/noteTitle"
+        android:layout_margin="1dp"/>
+
+    <TextView
+        android:id="@+id/detailsTitleNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/detailsTitleNoteLabel"
+        android:layout_toEndOf="@id/detailsTitleNoteLabel"
+        android:layout_alignTop="@id/detailsTitleNoteLabel"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"/>
+
+    <TextView
+        android:id="@+id/detailsDateNoteLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailsTitleNoteLabel"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="@string/date"
+        android:layout_margin="1dp" />
+
+    <TextView
+        android:id="@+id/detailsDateNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailsDateNoteLabel"
+        android:layout_toRightOf="@id/detailsDateNoteLabel"
+        android:layout_toEndOf="@id/detailsDateNoteLabel"
+        android:layout_alignTop="@id/detailsDateNoteLabel"
+        android:layout_alignLeft="@id/detailsTitleNote"
+        android:layout_alignStart="@id/detailsTitleNote"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"/>
+
+</RelativeLayout>

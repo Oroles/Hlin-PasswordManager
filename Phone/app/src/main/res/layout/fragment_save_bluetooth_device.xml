@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/displayNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="10dp"
+        android:text="@string/bluetooth_display_name"/>
+
+    <EditText
+        android:id="@+id/displayNameEditText"
+        android:layout_toEndOf="@id/displayNameLabel"
+        android:layout_toRightOf="@id/displayNameLabel"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/nameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@id/displayNameEditText"
+        android:text="@string/bluetooth_name"/>
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/nameLabel"
+        android:layout_toEndOf="@id/nameLabel"
+        android:layout_below="@id/displayNameEditText"
+        android:layout_alignLeft="@id/displayNameEditText"
+        android:layout_alignStart="@id/displayNameEditText"/>
+
+    <TextView
+        android:id="@+id/macLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@id/nameTextView"
+        android:text="@string/bluetooth_mac"/>
+
+    <TextView
+        android:id="@+id/macTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/macLabel"
+        android:layout_toRightOf="@id/macLabel"
+        android:layout_below="@id/nameTextView"
+        android:layout_alignLeft="@id/displayNameEditText"
+        android:layout_alignStart="@id/displayNameEditText"/>
+
+</RelativeLayout>

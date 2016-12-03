@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/bluetoothDisplayNameLabel"
+        android:layout_margin="2dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bluetooth_display_name"/>
+
+    <TextView
+        android:id="@+id/bluetoothDisplayNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/bluetoothDisplayNameLabel"
+        android:layout_toEndOf="@id/bluetoothDisplayNameLabel"
+        android:layout_alignTop="@id/bluetoothDisplayNameLabel"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"/>
+
+    <TextView
+        android:id="@+id/bluetoothNameLabel"
+        android:layout_margin="2dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@id/bluetoothDisplayNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bluetooth_name"
+        />
+
+    <TextView
+        android:id="@+id/bluetoothNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bluetoothDisplayNameTextView"
+        android:layout_toRightOf="@id/bluetoothNameLabel"
+        android:layout_toEndOf="@id/bluetoothNameLabel"
+        android:layout_alignLeft="@id/bluetoothDisplayNameTextView"
+        android:layout_alignStart="@id/bluetoothDisplayNameTextView" />
+
+    <TextView
+        android:id="@+id/bluetoothMacLabel"
+        android:layout_margin="2dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@id/bluetoothNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bluetooth_mac"/>
+
+    <TextView
+        android:id="@+id/bluetoothMacTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bluetoothNameTextView"
+        android:layout_toRightOf="@id/bluetoothMacLabel"
+        android:layout_toEndOf="@id/bluetoothMacLabel"
+        android:layout_alignLeft="@id/bluetoothDisplayNameTextView"
+        android:layout_alignStart="@id/bluetoothDisplayNameTextView" />
+
+    <TextView
+        android:id="@+id/bluetoothLastTimeUsedLabel"
+        android:layout_margin="2dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@id/bluetoothMacTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/last_time_used"/>
+
+    <TextView
+        android:id="@+id/bluetoothLastTimeUsedTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bluetoothMacTextView"
+        android:layout_toRightOf="@id/bluetoothLastTimeUsedLabel"
+        android:layout_toEndOf="@id/bluetoothLastTimeUsedLabel"
+        android:layout_alignLeft="@id/bluetoothDisplayNameTextView"
+        android:layout_alignStart="@id/bluetoothDisplayNameTextView" />
+
+    <TextView
+        android:id="@+id/bluetoothCreatedLabel"
+        android:layout_margin="2dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@id/bluetoothLastTimeUsedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bluetooth_created"/>
+
+    <TextView
+        android:id="@+id/bluetoothCreatedTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bluetoothLastTimeUsedTextView"
+        android:layout_toRightOf="@id/bluetoothCreatedLabel"
+        android:layout_toEndOf="@id/bluetoothCreatedLabel"
+        android:layout_alignLeft="@id/bluetoothDisplayNameTextView"
+        android:layout_alignStart="@id/bluetoothDisplayNameTextView" />
+
+    <TextView
+        android:id="@+id/deleteBluetoothNameMessageTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:textAlignment="center"
+        android:text="@string/delete_bluetooth_name_message"
+        android:layout_below="@id/bluetoothCreatedTextView"/>
+
+</RelativeLayout>

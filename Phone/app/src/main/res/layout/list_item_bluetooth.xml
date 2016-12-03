@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/bluetoothDeviceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="@string/bluetoothName"
+        android:layout_margin="1dp"/>
+
+    <TextView
+        android:id="@+id/bluetoothDeviceNameEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/bluetoothDeviceName"
+        android:layout_toEndOf="@id/bluetoothDeviceName"
+        android:layout_margin="1dp"/>
+
+    <TextView
+        android:id="@+id/bluetoothDeviceMac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bluetoothDeviceName"
+        android:text="@string/bluetoothMac"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_margin="1dp"/>
+
+    <TextView
+        android:id="@+id/bluetoothDeviceMacEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/bluetoothDeviceMac"
+        android:layout_toEndOf="@id/bluetoothDeviceMac"
+        android:layout_alignTop="@id/bluetoothDeviceMac"
+        android:layout_margin="1dp"/>
+
+</RelativeLayout>

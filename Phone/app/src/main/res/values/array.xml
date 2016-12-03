@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="listValuesExpired">
+        <item>Display dialog</item>
+        <item>Mark them</item>
+        <item>Nothing</item>
+    </string-array>
+
+    <string-array name="listOptionsExpired">
+        <item>DisplayDialog</item>
+        <item>Mark</item>
+        <item>Nothing</item>
+    </string-array>
+
+    <string-array name="listValuesIsAlive">
+        <item>Close connection</item>
+        <item>Nothing</item>
+    </string-array>
+
+    <string-array name="listOptionsIsAlive">
+        <item>CloseConnection</item>
+        <item>Nothing</item>
+    </string-array>
+
+    <string-array name="listValuesWrongDevice">
+        <item>Close Connection</item>
+        <item>Nothing</item>
+    </string-array>
+
+    <string-array name="listOptionsWrongDevice">
+        <item>CloseConnection</item>
+        <item>Nothing</item>
+    </string-array>
+
+    <string-array name="listValuesSearch">
+        <item>Website</item>
+        <item>Username</item>
+        <item>Both</item>
+    </string-array>
+
+    <string-array name="listOptionsSearch">
+        <item>Website</item>
+        <item>Username</item>
+        <item>Both</item>
+    </string-array>
+
+</resources>

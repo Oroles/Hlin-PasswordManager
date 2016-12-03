@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_container"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/bluetoothName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/bluetoothName"
+            android:textStyle="bold"
+            android:layout_margin="5dp"/>
+
+        <com.example.oroles.hlin.Views.CCSpinner
+            android:id="@+id/bluetoothSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/bluetoothName"
+            android:layout_toRightOf="@id/bluetoothName"/>
+
+        <Button
+            android:layout_below="@id/bluetoothName"
+            android:layout_margin="5dp"
+            android:text="@string/bluetoothConnect"
+            android:id="@+id/connectBluetoothButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:layout_below="@id/connectBluetoothButton"
+            android:layout_margin="5dp"
+            android:text="@string/bluetoothDisconnect"
+            android:id="@+id/disconnectBluetoothButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:layout_below="@id/disconnectBluetoothButton"
+            android:id="@+id/bluetoothStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:text="@string/status"/>
+
+        <TextView
+            android:id="@+id/connectionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/bluetoothStatus"
+            android:layout_toEndOf="@id/bluetoothStatus"
+            android:layout_alignTop="@id/bluetoothStatus"
+            android:text="@string/bluetoothDisconnect" />
+
+        <TextView
+            android:id="@+id/bluetoothLastTimeUsed"
+            android:layout_below="@id/bluetoothStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:text="@string/last_time_used"/>
+
+        <TextView
+            android:id="@+id/bluetoothLastTimeUsedTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/bluetoothLastTimeUsed"
+            android:layout_toEndOf="@id/bluetoothLastTimeUsed"
+            android:layout_alignTop="@id/bluetoothLastTimeUsed"
+            android:text="@string/unknown"/>
+
+        <View
+            android:id="@+id/horizontalBar"
+            android:layout_below="@id/bluetoothLastTimeUsed"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimaryDark"/>
+
+        <Button
+            android:id="@+id/discoverBluetoothButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/horizontalBar"
+            android:layout_margin="5dp"
+            android:text="@string/Discover"
+            android:background="@drawable/button_shape"
+            android:textColor="#ffffff"/>
+
+        <ListView
+            android:id="@+id/bluetoothDevicesListView"
+            android:layout_below="@id/discoverBluetoothButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ListView>
+
+</RelativeLayout>

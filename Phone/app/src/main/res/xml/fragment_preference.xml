@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Check expired Passwords">
+
+        <CheckBoxPreference
+            android:key="checkExpiredPasswords"
+            android:title="Check Expired Passwords"
+            android:summary="Enable to check which passwords not changed"/>
+
+        <EditTextPreference
+            android:key="daysExpiredPasswords"
+            android:summary="Number of days before expire"
+            android:title="Number of days"
+            android:defaultValue="30"
+            android:inputType="numberDecimal"
+            android:dependency="checkExpiredPasswords"
+            android:layout="?android:attr/preferenceLayoutChild"/>
+
+        <ListPreference
+            android:key="expirePasswordsAction"
+            android:summary="Select the option to take"
+            android:title="Action to take"
+            android:defaultValue="Nothing"
+            android:entries="@array/listValuesExpired"
+            android:entryValues="@array/listOptionsExpired"
+            android:dependency="checkExpiredPasswords"
+            android:layout="?android:attr/preferenceLayoutChild"    />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Check connection">
+
+        <CheckBoxPreference
+            android:key="sendIsAlivePackages"
+            android:title="Check bluetooth connection"
+            android:summary="Check continuously the state of the connection"/>
+
+        <EditTextPreference
+            android:key="numberOfSecondsIsAlivePackages"
+            android:summary="Number of seconds between two packages"
+            android:title="Frequency of packages"
+            android:inputType="numberDecimal"
+            android:dependency="sendIsAlivePackages"/>
+
+        <ListPreference
+            android:key="isAliveAction"
+            android:summary="Select the option to take"
+            android:title="Action to take"
+            android:entries="@array/listValuesIsAlive"
+            android:entryValues="@array/listOptionsIsAlive"
+            android:dependency="sendIsAlivePackages"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Wrong device">
+
+        <ListPreference
+            android:key="wrongDeviceAction"
+            android:summary="Select the option to take"
+            android:title="Action to take"
+            android:entries="@array/listValuesWrongDevice"
+            android:entryValues="@array/listOptionsWrongDevice"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Search"/>
+
+        <ListPreference
+            android:key="searchAction"
+            android:summary="Select option to take"
+            android:title="Action to take"
+            android:entries="@array/listValuesSearch"
+            android:entryValues="@array/listOptionsSearch" />
+
+    <PreferenceCategory
+        android:title="Salt"/>
+
+        <EditTextPreference
+            android:key="saltForKey"
+            android:summary="Salt used to decrypt the key"
+            android:title="Salt"
+            android:inputType="numberDecimal" />
+
+    <PreferenceCategory
+        android:title="Password"/>
+
+        <CheckBoxPreference
+            android:key="enforceMinimumLength"
+            android:title="Enforce Minimum Length"
+            android:summary="Enforce a minimum length of 8 and a maximum 16 characters"/>
+
+        <CheckBoxPreference
+            android:key="checkForCommonPasswords"
+            android:title="Check for common passwords"
+            android:summary="Check the input password for common passwords"/>
+
+</PreferenceScreen>
